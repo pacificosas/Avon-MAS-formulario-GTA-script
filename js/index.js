@@ -33,7 +33,7 @@ function injectForm(injectSite, popupPath, maxHeight) {
         return false;
     }
     popup = new PacificaPopup({
-        html: "<iframe src=" + injectSite + " height=100% width=100% style=\"border:none; background:white;\"></iframe>\n\t\t<span style=\"position:absolute;top:1.5rem; font-weight:500;font-size:1.5rem;color:#00000078;cursor:pointer;right:2rem;background:#ffffffa1;padding:0rem 0.5rem; border-radius:50px;\">X</span>\n\t",
+        html: "<iframe src=" + injectSite + " height=100% width=100% style=\"border:none; background:white;\"></iframe>\n\t\t<span style=\"position:absolute;top:1.5rem; font-weight:500;font-size:1.5rem;color:#00000078;cursor:pointer;right:3rem;background:#ffffffa1;padding:0rem 0.5rem; border-radius:50px;\">X</span>\n\t",
         open: true,
         closeOnClickOf: "span",
         popupCss: {

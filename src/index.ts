@@ -32,7 +32,7 @@ function injectForm(injectSite:string,popupPath:string,maxHeight:string){
 	if(localStorage.getItem(keyname)){return false}
 	popup=new PacificaPopup({
 	html:`<iframe src=${injectSite} height=100% width=100% style="border:none; background:white;"></iframe>
-		<span style="position:absolute;top:1.5rem; font-weight:500;font-size:1.5rem;color:#00000078;cursor:pointer;right:2rem;background:#ffffffa1;padding:0rem 0.5rem; border-radius:50px;">X</span>
+		<span style="position:absolute;top:1.5rem; font-weight:500;font-size:1.5rem;color:#00000078;cursor:pointer;right:3rem;background:#ffffffa1;padding:0rem 0.5rem; border-radius:50px;">X</span>
 	`,
 		open:true,
 		closeOnClickOf:"span",
