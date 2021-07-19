@@ -26,7 +26,7 @@ window.addEventListener('message', (event) => {
 })
 
 
-function injectForm(injectSite:string,popupPath:string){
+function injectForm(injectSite:string,popupPath:string,maxHeight:string){
 	if(popupPath && window.location.pathname != popupPath){return false}
 	if(sessionStorage.getItem(keyname)){return false}
 	if(localStorage.getItem(keyname)){return false}
@@ -45,7 +45,7 @@ function injectForm(injectSite:string,popupPath:string){
 				maxWidth:"1100px",
 				zIndex:"5000000000",
 				top:'50vh',
-				maxHeight:'100%'
+				maxHeight:maxHeight || '85vh'
 			},
 			mobile:{
 

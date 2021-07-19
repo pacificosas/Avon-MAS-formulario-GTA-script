@@ -22,7 +22,7 @@ window.addEventListener('message', function (event) {
             break;
     }
 });
-function injectForm(injectSite, popupPath) {
+function injectForm(injectSite, popupPath, maxHeight) {
     if (popupPath && window.location.pathname != popupPath) {
         return false;
     }
@@ -45,7 +45,7 @@ function injectForm(injectSite, popupPath) {
                 maxWidth: "1100px",
                 zIndex: "5000000000",
                 top: '50vh',
-                maxHeight: '100%'
+                maxHeight: maxHeight || '85vh'
             },
             mobile: {}
         },
